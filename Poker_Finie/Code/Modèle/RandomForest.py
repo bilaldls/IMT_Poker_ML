@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 
 # Chargement du dataset
-df = pd.read_csv("../CSV/Encoded/OneHot/poker_encoded_onehot(1000).csv", header=None)  # Pas de header si pas précisé dans le fichier
+df = pd.read_csv("../CSV/Encoded/OneHot/poker_encoded_onehot(10000).csv", header=None)  # Pas de header si pas précisé dans le fichier
 
 # Séparation correcte
 X_preflop = df.iloc[:, :34]     # Main seulement

@@ -19,7 +19,7 @@ def encode_card(card):
     return value_encoding + suit_encoding  # concatène les deux encodages
 
 # Lecture du CSV
-df = pd.read_csv("../CSV/poker_winrates(Monte_carlo=100).csv", sep=',')
+df = pd.read_csv("poker_winrates.csv", sep=',')
 
 df.columns = [
     "hand_1", "hand_2",
@@ -41,5 +41,5 @@ for _, row in df.iterrows():
 encoded_df = pd.DataFrame(encoded_rows)
 
 # Sauvegarde
-encoded_df.to_csv("poker_encoded_onehot(100).csv", index=False)
+encoded_df.to_csv("poker_encoded_onehot(10000).csv", index=False)
 print("✅ Encodage one-hot terminé. Fichier sauvegardé : poker_encoded_onehot.csv")
