@@ -77,4 +77,4 @@ def generate_dataset_csv(n=1000, nb_simulations=1000, output_file="poker_winrate
 
 # Lancement
 if __name__ == "__main__":
-    generate_dataset_csv(n=10000, nb_simulations=100)
+    generate_dataset_csv(n=10000, nb_simulations=10000)
