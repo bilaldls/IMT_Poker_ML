@@ -18,7 +18,7 @@ def encode_card(card):
     return [value] + suit_encoding  # Valeur + One-hot de la couleur
 
 # Lecture du CSV avec le bon séparateur
-df = pd.read_csv("poker_winrates(Monte_carlo=100).csv", sep=',')
+df = pd.read_csv("../CSV/poker_winrates(Monte_carlo=100).csv", sep=',')
 
 df.columns = [
     "hand_1", "hand_2",
