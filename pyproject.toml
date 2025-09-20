@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poker-ml"
+version = "0.1.0"
+description = "Machine learning experiments on poker win-rate estimation"
+authors = [{name = "IMT Students"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "tqdm",
+    "treys",
+    "imbalanced-learn",
+    "xgboost",
+]
+
+[project.optional-dependencies]
+deep-learning = ["tensorflow"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
